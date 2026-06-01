@@ -1,48 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Eraelysium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eraelysium</title>
 
-    <style>
-        body {
-            text-align: center;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-        h1 {
-            font-size: 120px;
-            color: blue;
-        }
+body{
+    background:#111;
+    color:white;
+}
 
-        p {
-            color: black;
-            font-size: 30px;
-        }
+header{
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
 
-        button {
-            padding: 20px;
-            font-size: 20px;
-        }
-    </style>
+header h1{
+    font-size:2rem;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero img{
+    width:300px;
+    max-width:90%;
+    border-radius:20px;
+    margin:20px 0;
+    box-shadow:0 0 30px rgba(255,255,255,0.2);
+}
+
+.hero h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:20px;
+}
+
+button{
+    background:#fff;
+    color:#000;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.about{
+    padding:60px 20px;
+    text-align:center;
+    background:#1c1c1c;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+</style>
 </head>
-
 <body>
 
+<header>
     <h1>ERAELYSIUM</h1>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Eraelysium</h2>
+
+    <img src="IMG-20260530-WA0000.jpg" alt="Eraelysium">
 
     <p>
-        Welcome to our corporation where we sell clothes,
-        make perfume, and create portraits.
+        Creativity, beauty, and innovation brought together
+        in one amazing experience.
     </p>
 
-    <p>Welcome to our website, click the button to join.</p>
-
-    <img src="IMG-20260530-WAOOOO.jpg" width="300">
-
-    <br><br>
-
-    <button onclick="alert('Welcome to ERAELYSIUM!')">
-        Join Now
+    <button onclick="showMessage()">
+        Learn More
     </button>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <br>
+    <p>
+        Eraelysium is a modern platform built to inspire,
+        connect, and showcase creativity to the world.
+    </p>
+</section>
+
+<footer>
+    © 2026 Eraelysium. All Rights Reserved.
+</footer>
+
+<script>
+function showMessage(){
+    alert("Thank you for visiting Eraelysium!");
+}
+</script>
 
 </body>
 </html>
